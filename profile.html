@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="css/signIn.css">
+    <link rel="stylesheet" href="css/followed.css">
+    <link rel="stylesheet" href="css/sass.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/MotionPathPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollToPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="data.js"></script>
+    <script src="js/signIn.js"></script>
+    <script src="js/profile.js"></script>
+    <script src="js/followed.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <title>Odyssey</title>
+</head>
+
+<body>
+
+    <div id="preloader">
+        <div id="rectangle">
+            <span id="left"></span>
+            <span id="top"></span>
+            <span id="right"></span>
+            <span id="bottom"></span>
+            <h1>Odyssey</h1>
+            <img id="leftHand" src="./Pictures/Preloader/leftHand.svg" alt="leftHand">
+            <img id="rightHand" src="./Pictures/Preloader/rightHand.svg" alt="rightHand">
+        </div>
+        <h2 id="artworkName">The Creation of Adam</h2>
+        <h2 id="artist">Michelangelo</h2>
+    </div>
+
+    <header>
+        <!-- ADD LOGO -->
+        <nav>
+            <ul class="navBar">
+                <div class="firstThree">
+                    <div>
+                        <a href="index.html">
+                            <div class="homeButton"><button>
+                                    <li>Home
+                                </button></li>
+                            </div>
+                        </a>
+                        <a href="profile.html">
+                            <div class="accountButton"><button>
+                                    <li>Account
+                                </button></li>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="signInButton"><button>
+                                    <li>Sign In
+                                </button></li>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="searchEngine">
+                    <div class="search-container">
+                        <form action="/search" method="get">
+                            <input class="search" id="searchleft" type="search" name="q" placeholder="Search">
+                            <label class="searchbutton" for="searchleft"><span class="mglass">&#9906;</span></label>
+                        </form>
+                    </div>
+                </div>
+
+            </ul>
+            <!-- ADD FOOTER-->
+        </nav>
+    </header>
+
+    <main>
+        <div class="toggleSwitch">
+            <input id="toggle-on" class="toggle toggle-left" name="toggle" value="false" type="radio">
+            <label for="toggle-on" class="button">Account</label>
+            <input id="toggle-off" class="toggle toggle-right" name="toggle" value="true" type="radio">
+            <label for="toggle-off" class="button">Followers</label>
+        </div>
+        <div id="account">
+        </div>
+        <div id="profileDetails"></div>
+        <div id="followersDetails"></div>
+    </main>
+
+    <footer>
+        <!-- ADD FOOTER-->
+    </footer>
+
+</body>
+
+</html>

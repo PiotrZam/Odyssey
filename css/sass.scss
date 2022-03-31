@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&family=Oswald:wght@200&display=swap');
+
+header, main, footer {
+    display:  grid; // display: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+    background: rgb(40, 40, 40);
+}
+
+// Preloader settings
+#preloader {
+    height: 100vh;
+    width: 100%;
+    background: #EFE2BA;
+    display: none; // display: grid;
+    grid-template-columns: 1fr 3fr 3fr 1fr;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+#rectangle {
+    grid-column: 2/4;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 70vh;
+    position: relative;
+}
+
+#rectangle #left, #right, #top, #bottom {
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    grid-column: 1/3;
+    border: 1px solid #CEA65B;
+
+}
+
+#rectangle #left {
+    height: 70vh;
+    bottom: 0;
+}
+
+#rectangle #right {
+    right: 0;
+    height: 70vh;
+}
+
+#rectangle #top {
+    width: 75.18vw;
+}
+
+#rectangle #bottom {
+    right: 0;
+    bottom: 0;
+    width: 75.18vw;
+}
+
+#rectangle h1 {
+    font-family: 'Oswald', sans-serif;
+    color: #CEA65B;
+    font-size: 7vh;
+    grid-column: 1/3;
+    position: absolute;
+    justify-self: center;
+    margin-top: 8vh;
+    z-index: 2;
+    // Start animation
+    display: block;
+    overflow:hidden;
+    line-height: 10vh;
+    
+}
+
+#rectangle h1 span {
+    position: relative;
+    top: 8vh;
+    opacity: 0;
+}
+
+#preloader h2 {
+    font-family: 'Ephesis', cursive;
+    color: #CEA65B;
+    font-size: 3.5vh;
+    justify-self: center;
+    margin-top: 9vh;
+    position: absolute;
+    z-index: 2;
+}
+
+#artworkName, #artist {
+    display: block;
+    overflow:hidden;
+    line-height: 2.8vh;
+    bottom: 6vh;
+    opacity: 0.9;
+}
+
+#artworkName span, #artist span {
+    position: relative;
+    top: 8vh;
+    opacity: 0;
+}
+
+#artworkName {
+    left: 30vw;
+}
+
+#artist {
+    right: 30vw;
+}
+
+#god, #man {
+    max-width: 50vw;
+    width: auto;
+    height: auto;
+    position: absolute;
+    filter:grayscale(0);
+    z-index: 2;
+}
+
+#man {
+    bottom: 1px;
+    left: 2px;
+}
+
+#god {
+    bottom: -0.2vh;
+    left: 24.4vw;
+}
+
+// Particles
+.particle {
+    position: absolute;
+    background-color: #AD6E52;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+header {
+    height: 10vh;
+}
+
+// TODO Continue to arrange the pattern
+// TODO Create the containers for the images
+// TODO Properly format the page and container
+.patternI {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+    /* gap: 1vh; */
+    border: none;
+    grid-template-areas: 'img-1 img-1 img-2 img-2 img-4 img-6'
+                        'img-1 img-1 img-3 img-3 img-5 img-6'
+                        ;
+  }
+  
+  .container {
+      display: flex;
+      position: relative;
+      width: 100%;
+      height: 20vh;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      background-position: center !important;
+      background-repeat: no-repeat !important;
+      background-size: cover !important;
+  }
+  
+  #img-1 {
+    min-height: 42vh;
+    grid-area: img-1;
+    background: url('./Pictures/Home/1.jpg')
+  }
+  
+  #img-2 {
+    grid-area: img-2;
+    background: url('./Pictures/Home/7.jpg')
+  }
+  
+  #img-3 {
+    grid-area: img-3;
+    background: url('./Pictures/Home/3.jpg')
+  }
+  
+  #img-4 {
+    grid-area: img-4;
+    background: url('./Pictures/Home/4.jpg')
+  }
+  
+  #img-5 {
+    grid-area: img-5;
+    background: url('./Pictures/Home/5.jpg')
+  }
+  
+  #img-6 {
+    min-height: 42vh;
+    grid-area: img-6;
+    background: url('./Pictures/Home/6.jpg')
+  }
+  
+  #img-7 {
+    grid-area: img-7;
+    background: url('./Pictures/Home/1.jpg')
+  }
+  
+  #img-8 {
+    grid-area: img-8;
+    background: url('./Pictures/Home/2.jpg')
+  }
+  
+  #img-9 {
+    grid-area: img-9;
+    background: url('./Pictures/Home/3.jpg')
+  }
+  
+  #img-10 {
+    grid-area: img-10;
+    background: url('./Pictures/Home/4.jpg')
+  }
+  
+  #img-11 {
+    grid-area: img-11;
+    background: url('./Pictures/Home/5.jpg')
+  }
+  
+  #img-12 {
+    grid-area: img-12;
+    background: url('./Pictures/Home/6.jpg')
+  }
+

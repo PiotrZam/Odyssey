@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Ephesis&family=Oswald:wght@200&family=Cormorant+Garamond:ital,wght@1,400;1,700&family=Fira+Sans&display=swap");
+
+
+#signInWindow {
+    font-family: 'Ephesis', cursive;
+    font-size: 3vh;
+    background-color: #1F1F1F;
+    color: whitesmoke;
+    position: fixed;
+    top: 2vh;
+    right: 2vh;
+    box-sizing: border-box;
+    text-align: center;
+    /* width: 0; */
+    width: 40%;
+    height: 95%;
+    /* padding: 2vw; */
+    border-radius: 2%;
+    z-index: 999;
+}
+
+.signInForm {
+    font-family: 'Ephesis', cursive;
+    font-size: 4vh;
+    margin-top: 8vh;
+    margin-bottom: 8vh;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#signInWindow input {
+    line-height: 3vh;
+    display: block;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1vh;
+    margin-bottom: 5vh;
+}
+
+#signInWindow #signInPassword,
+#signInWindow #registerPassword2 {
+    margin-bottom: 3vh;
+}
+
+.credentialsFeedback {
+    display: none;
+    width: 70%;
+    margin: auto;
+    border: solid 1px firebrick;
+    padding: 1vh;
+    text-align: left;
+    font-family: 'Oswald', sans-serif;
+    color: firebrick;
+    font-size: 2vh;
+}
+
+#signInWindow #signInButton,
+#signInWindow #registerButton {
+    font-family: 'Ephesis', cursive;
+    background-color: inherit;
+    color: inherit;
+    border: none;
+    cursor: pointer;
+    font-size: 5vh;
+    max-width: 40vh;
+    margin-top: 5vh;
+    line-height: 6vh;
+    /* margin-left: auto;
+    margin-right: auto; */
+}
+
+
+#signInButton:active,
+#registerButton:active {
+    color: grey;
+}
+
+#registerLink {
+    font-size: 4vh;
+}
+
+a:link,
+a:visited {
+    color: whitesmoke;
+}
+
+a:hover,
+a:active {
+    color: grey;
+}
+
+
+#signInClose {
+    position: static;
+    float: right;
+    margin-right: 4vh;
+    font-size: 4vh;
+    cursor: pointer;
+}
+
+#signInClose:hover {
+    color: black;
+}
