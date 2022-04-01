@@ -623,7 +623,7 @@ $(document).ready(function () {
             $("#profilePicNameLike").append(`<div id="profilePicture"><img src="${picture}" alt=""></div>`);
             $("#profilePicNameLike").append(`<div id="profileColumn"></div>`);
             $("#profileColumn").append(`<div id="profileName"><p> ${name} </p></div>`);
-            $("#profileColumn").append(`<div id="profileLiked"><img src="images/love.png" alt=""></div>`);
+            // $("#profileColumn").append(`<div id="profileLiked"><img src="images/love.png" alt=""></div>`);
         }
 
         function removeProfile() {

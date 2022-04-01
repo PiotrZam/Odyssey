@@ -53,6 +53,12 @@ var signedIn = false;
 var loggedInUser = data[1];
 var signInDisplaying = false;
 
+function updateProfile() {
+    $('#profileName').html(`<p> ${loggedInUser.profileName} </p>`);
+    $('#profilePicture').html(`<img src="${loggedInUser.profileAvatar}">`);
+    $('#profileInfo').html(`<p> ${loggedInUser.description} </p>`);
+}
+
 function signIn() {
     for (let i = 0; i < data.length; i++) {
         let user = data[i];
@@ -61,6 +67,7 @@ function signIn() {
                 alert("Successfully signed in");
                 signedIn = true;
                 loggedInUser = user;
+                updateProfile();
                 closeSignInWindow();
                 break;
             } else {
@@ -122,7 +129,7 @@ function signInWindowToggle() {
 }
 
 function displaySignInWindow() {
-    if (!signedIn) {
+    if (true) {    // when the actual server is deployed it will be if (!signedIn) {  
         $('main').after(registerPageCode);
         gsap.from('#signInWindow', { duration: 1, x: '100%', ease: 'power1.inOut' })
         // gsap.timeline().to($('#signInWindow'), 1, {
