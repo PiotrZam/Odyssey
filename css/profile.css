@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Ephesis&family=Oswald:wght@200&family=Cormorant+Garamond:ital,wght@1,400;1,700&family=Fira+Sans:wght@100;400&display=swap");
-header, main, footer {
+
+header,
+main,
+footer {
   display: -ms-grid;
   display: none;
   opacity: 0;
@@ -9,7 +12,7 @@ header, main, footer {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -22,18 +25,18 @@ body {
   background: #282828;
 }
 
-nav{
+nav {
   margin-top: 2%;
 }
 
-.navBar{
+.navBar {
   display: flex;
   flex-direction: row;
 }
 
 .firstThree div {
   display: flex;
-  position:relative;
+  position: relative;
   background-color: transparent;
   background-repeat: no-repeat;
   border: none;
@@ -46,8 +49,8 @@ nav{
   margin-left: 16px;
 }
 
-.firstThree div button{
-  position:relative;
+.firstThree div button {
+  position: relative;
   background-color: transparent;
   background-repeat: no-repeat;
   border: none;
@@ -75,11 +78,11 @@ nav{
   transform-origin: bottom left;
 }
 
-.homeButton{
-  margin-left:2.3rem;
+.homeButton {
+  margin-left: 2.3rem;
 }
 
-.searchEngine{
+.searchEngine {
   margin-top: -7px;
   margin-left: 16px;
 }
@@ -129,7 +132,7 @@ nav{
   padding: 0;
 }
 
-.search:focus + .searchbutton {
+.search:focus+.searchbutton {
   transition-duration: 0.4s;
   -moz-transition-duration: 0.4s;
   -webkit-transition-duration: 0.4s;
@@ -140,7 +143,7 @@ nav{
 
 .search {
   position: absolute;
-  left: 20px; 
+  left: 20px;
   background-color: white;
   outline: none;
   border: none;
@@ -155,73 +158,78 @@ nav{
 }
 
 .search:focus {
-  width: 150px; 
+  width: 150px;
   padding: 0 16px 0 0;
 }
 
 .expandright {
   left: auto;
-  right: 49px; 
+  right: 49px;
 }
 
 .expandright:focus {
   padding: 0 0 0 16px;
 }
 
-#profileDetails{
-    margin-bottom: 100px;
-    margin-top:1%;
-    margin-bottom: 5%;
-    display: flex;
-    flex-direction:row;
-    color: whitesmoke;
-  
-  }
-  #profilePicNameLike{
-    display: flex;
-    flex-direction: row;
-    margin-left: 20%;
-  }
+#profileDetails {
+  margin-bottom: 100px;
+  margin-top: 1%;
+  margin-bottom: 5%;
+  display: flex;
+  flex-direction: row;
+  color: whitesmoke;
 
-  #profileInfo{
-    margin-left:3%;
-    margin-right:20%;
-    margin-top: 0px;
-    margin-bottom: auto;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 4; 
-            line-clamp: 2; 
-    -webkit-box-orient: vertical;
-   }
-  
-   #profilePicture img{
-    width: 75px;
-    height: 75px;
-    border-radius: 100%;
-  }
-  #profileColumn{
-    display: table-cell;
-    vertical-align:auto;
-  }
-  
-  #profileName{
-    margin-left:5%;
-   margin-top: 20px;
-   width: 150px;
-   white-space: nowrap;
-   overflow: hidden;
-   text-overflow: ellipsis;
-  }
-   #profileLiked img{
-     margin-top: 20px;
-     width: 20px;
-     height: 20px;
-     border-radius: 100%;
-   }
-  
-  .navButton {
+}
+
+#profilePicNameLike {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 20%;
+  height: 150px;
+}
+
+#profileInfo {
+  margin-left: 3%;
+  margin-right: 20%;
+  margin-top: 0px;
+  margin-bottom: auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+#profilePicture img {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+}
+
+#profileColumn {
+  display: table-cell;
+  vertical-align: auto;
+}
+
+#profileName {
+  padding-left: 30px;
+  width: 150px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 24px;
+}
+
+#profileLiked img {
+  margin-top: 20px;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+}
+
+.navButton {
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
@@ -229,73 +237,81 @@ nav{
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   position: relative;
   cursor: pointer;
-  padding:4px;
-  }
-  
-  .button {
-    border-bottom: solid #1a1a1a 3px;
-    border-top: solid #1a1a1a 3px;
-    display: inline-block;
-    padding: 0px;
-    width: 15%;
-    position: relative;
-    text-align: center;
-  }
+  padding: 4px;
+}
 
-  input[type="radio"].toggle {
-    display: none;
-  }
-  input[type="radio"].toggle + label {
-    cursor: pointer;
-    min-width: 60px;
-    color: red;
-  
-  }
-  input[type="radio"].toggle + label:hover {
-    background: none;
-    color: red;
-   
-  }
-  
-  input[type="radio"].toggle + label:after {
-    background: #1a1a1a;
-    content: "";
-    height: 100%;
-    position: absolute;
-    top: 0;
-    transition: left  200ms cubic-bezier(0.175, 1, 0.175, 1);
-    width: 100%;
-    z-index: -1;
-  }
+.button {
+  border-bottom: solid #1a1a1a 3px;
+  border-top: solid #1a1a1a 3px;
+  display: inline-block;
+  padding: 0px;
+  width: 15%;
+  position: relative;
+  text-align: center;
+}
 
-  input[type="radio"].toggle.toggle-left + label {
-    border-right: 0;
-  
-  }
-  input[type="radio"].toggle.toggle-left + label:after {
-    left: 100%; 
+input[type="radio"].toggle {
+  display: none;
+}
 
-  }
-  input[type="radio"].toggle.toggle-right + label {
-    margin-left: -4px;
-  }
-  input[type="radio"].toggle.toggle-right + label:after {
-    left: -100%;
-  }
-  input[type="radio"].toggle:checked + label {
-    cursor: default;
-    color: #fff;
-    transition: color 200ms;
-  }
-  input[type="radio"].toggle:checked + label:after {
-    left: 0;
-  }
-  
-  .toggleSwitch{
-    margin-top: 0%;
-    margin-bottom: 5%;
-    text-align: center;
-  }
+input[type="radio"].toggle+label {
+  cursor: pointer;
+  min-width: 60px;
+  color: red;
+
+}
+
+input[type="radio"].toggle+label:hover {
+  background: none;
+  color: red;
+
+}
+
+input[type="radio"].toggle+label:after {
+  background: #1a1a1a;
+  content: "";
+  height: 100%;
+  position: absolute;
+  top: 0;
+  transition: left 200ms cubic-bezier(0.175, 1, 0.175, 1);
+  width: 100%;
+  z-index: -1;
+}
+
+input[type="radio"].toggle.toggle-left+label {
+  border-right: 0;
+
+}
+
+input[type="radio"].toggle.toggle-left+label:after {
+  left: 100%;
+
+}
+
+input[type="radio"].toggle.toggle-right+label {
+  margin-left: -4px;
+}
+
+input[type="radio"].toggle.toggle-right+label:after {
+  left: -100%;
+}
+
+input[type="radio"].toggle:checked+label {
+  cursor: default;
+  color: #fff;
+  transition: color 200ms;
+}
+
+input[type="radio"].toggle:checked+label:after {
+  left: 0;
+}
+
+.toggleSwitch {
+  margin-top: 0%;
+  margin-bottom: 5%;
+  text-align: center;
+}
+
 footer {
   height: 20vh;
 }
@@ -306,10 +322,10 @@ footer {
   background: #1F1F1F;
   display: grid;
   -ms-grid-columns: 1fr 3fr 3fr 1fr;
-      grid-template-columns: 1fr 3fr 3fr 1fr;
+  grid-template-columns: 1fr 3fr 3fr 1fr;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   position: relative;
   overflow: hidden;
 }
@@ -321,12 +337,15 @@ footer {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   height: 70vh;
   position: relative;
 }
 
-#rectangle #left, #right, #top, #bottom {
+#rectangle #left,
+#right,
+#top,
+#bottom {
   position: absolute;
   width: 0px;
   height: 0px;
@@ -365,7 +384,7 @@ footer {
   grid-column: 1/3;
   position: absolute;
   -ms-grid-column-align: center;
-      justify-self: center;
+  justify-self: center;
   top: 40%;
   z-index: 2;
   display: block;
@@ -384,13 +403,14 @@ footer {
   color: #CEA65B;
   font-size: 3.5vh;
   -ms-grid-column-align: center;
-      justify-self: center;
+  justify-self: center;
   margin-top: 9vh;
   position: absolute;
   z-index: 2;
 }
 
-#artworkName, #artist {
+#artworkName,
+#artist {
   display: block;
   overflow: hidden;
   line-height: 2.8vh;
@@ -398,7 +418,8 @@ footer {
   opacity: 0.9;
 }
 
-#artworkName span, #artist span {
+#artworkName span,
+#artist span {
   position: relative;
   top: 8vh;
   opacity: 0;
@@ -412,7 +433,8 @@ footer {
   right: 30vw;
 }
 
-#leftHand, #rightHand {
+#leftHand,
+#rightHand {
   position: absolute;
   width: 10vw;
   height: 10vh;
@@ -455,29 +477,29 @@ header {
 
 .patternI {
   grid-template-areas: 'A1 A1 A2 A2 A4 A6'
-                       'A1 A1  A3 A3 A5 A6';
-} 
+    'A1 A1  A3 A3 A5 A6';
+}
 
 .patternII {
   grid-template-areas: 'B1 B2 B4 B4 B6 B6'
-                       'B1 B3 B3 B5 B6 B6';
+    'B1 B3 B3 B5 B6 B6';
 }
 
 .patternIII {
   grid-template-areas: 'C1 C3 C4 C4 C5 C6'
-                       'C2 C3 C4 C4 C5 C7';
+    'C2 C3 C4 C4 C5 C7';
 }
 
 .container {
-    display: flex;
-    position: relative;
-    width: 100%;
-    height: 30vh;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    background-color: #1F1F1F;
-    z-index: 1;
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 30vh;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  background-color: #1F1F1F;
+  z-index: 1;
 }
 
 .artwork {
@@ -567,15 +589,19 @@ header {
   overflow: auto;
 }
 
-.containerHover { 
-    position: relative;
-    height: 100%;
-    width: 100%;
+.containerHover {
+  position: relative;
+  height: 100%;
+  width: 100%;
 }
 
-.topBorder, .rightBorder, .bottomBorder, .leftBorder {
+.topBorder,
+.rightBorder,
+.bottomBorder,
+.leftBorder {
   position: absolute;
-  border: .5px solid rgba(202, 202, 202, 0.5);  /* .5px */
+  border: .5px solid rgba(202, 202, 202, 0.5);
+  /* .5px */
   z-index: 100;
 }
 
@@ -599,7 +625,9 @@ header {
 }
 
 /* Hover icons */
-.fa-heart, .fa-plus, .fa-share {
+.fa-heart,
+.fa-plus,
+.fa-share {
   width: 30px;
   height: 30px;
   position: absolute;
@@ -631,7 +659,7 @@ header {
   grid-area: A2;
 }
 
-.A3{
+.A3 {
   grid-area: A3;
 }
 
@@ -639,7 +667,7 @@ header {
   grid-area: A4;
 }
 
-.A5{
+.A5 {
   grid-area: A5;
 }
 
@@ -648,59 +676,59 @@ header {
   min-height: 61vh;
 }
 
-.B1 {  
+.B1 {
   min-height: 61vh;
   grid-area: B1;
 }
 
-.B2 {  
+.B2 {
   grid-area: B2;
 }
 
-.B3 {  
+.B3 {
   grid-area: B3;
 }
 
-.B4 {  
+.B4 {
   grid-area: B4;
 }
 
-.B5 {  
+.B5 {
   grid-area: B5;
 }
 
-.B6 { 
+.B6 {
   min-height: 61vh;
   grid-area: B6;
 }
 
-.C1 { 
+.C1 {
   grid-area: C1;
 }
 
-.C2 { 
+.C2 {
   grid-area: C2;
 }
 
-.C3 { 
+.C3 {
   min-height: 61vh;
   grid-area: C3;
 }
 
-.C4 { 
+.C4 {
   min-height: 61vh;
   grid-area: C4;
 }
 
-.C5 { 
+.C5 {
   min-height: 61vh;
   grid-area: C5;
 }
 
-.C6 { 
+.C6 {
   grid-area: C6;
 }
 
-.C7 { 
+.C7 {
   grid-area: C7;
 }
